@@ -1,63 +1,55 @@
-/* @media only screen and (max-width: 450px) {
-	.nav-bar {
-		margin: auto 5%;
-	}
-}
-
 body {
-	background-color: #E5F2FF;
+	font-family: 'Raleway', sans-serif;
+	background-color: rgb(235, 233, 233);
 }
 
-header {
-	display: flex;
-	justify-content: center;
-	font-size: 25px;
+html {
+	scroll-behavior: smooth;
 }
 
-.nav-bar {
-	margin: auto 10%;
+.main-content:nth-child(even) {
+	background-color: rgb(29, 30, 35)
 }
 
-a {
-	text-decoration: none;
-	color: black;
+.main-content:nth-child(even) h2 {
+	color: white;
 }
 
-.middle {
-	display: flex;
-	justify-content: center;
+.main-content {
+	padding: 3rem 0;
 }
 
-.middle-grid-1 {
+.main-content footer {
+	padding: 0;
+}
+
+.landing-page {
+	height: 100vh;
+	background-image: url("images/tobias-van-schneider-9QrjShkAmnM-unsplash.jpg");
+	background-size: cover;
 	display: grid;
-	grid-template-rows: 150px 150px;
+	grid-template-rows: 200px 1fr 200px;
+	grid-template-columns: 20% 1fr 20%;
 }
 
-.middle2 {
-	border: 5px double black;
-	grid-row: 2 / span 1;
-	display: flex;
-	justify-content: left;
+h1 {
+	font-weight: normal;
+	font-size: 40px;
+	text-align: center;
+	color: white;
+	grid-row: 1;
+	grid-column: 2;
+	justify-self: center;
+	align-self: center;
 }
 
-.middle-grid-2 {
-	display: grid;
-	grid-template-rows: 90px 200px;
-	grid-template-columns: 180px 200px 180px;
+.navigation-container {
+	grid-row: 3;
+	grid-column: 2;
+	justify-self: stretch;
+	align-self: center;
+	flex-wrap: wrap;
 }
 
-.bio {
-	font-size: 36px;
-	font-weight: bolder;
-	display: inline-block;
-	white-space: nowrap;
-}
-
-p {
-	margin-top: 40px;
-	margin-left: 20px;
-}
-
-.text-muted {
-	color: #696969;
-} */
+/* the light blue color */
+/* background-color: #E5F2FF; */
