@@ -1,37 +1,104 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Jamie Miller Portfolio</title>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-
-  <body>
-    <header>
-      <div class="nav-bar">
-        <a href>About Me</a>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" 
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <title>Jamie Miller</title>
+</head>
+<body>
+  <header class="landing-page">
+    <h1>
+      Hello, I'm
+      <span class="name">Jamie Miller</span>
+       .
+      <br>
+      I'm a Software Engineer
+    </h1>
+    <nav class="nav-container">
+      <div class="nav-buttons-container">
+        <a href="#about" class="nav-links">About Me</a>
+        <a href="#projects" class="nav-links">Projects</a>
+        <a href="#skills" class="nav-links">Skills</a>
+        <a href="#contact" class="nav-links">Contact</a>
       </div>
-      <div class="nav-bar">
-        <a href="projects.html">Projects</a>
-      </div>
-      <div class="nav-bar">
-        <a href>Contact</a>
-      </div>
-    </header>
-    <div class="middle">
-      <div class="middle-grid-1">
-      <div class="middle2">
-        <div class="middle-grid-2">
-        <div class="bio">
-          <p>Jamie Miller <span class="text-muted"> / Software Engineer</span></p>
-        </div>
+    </nav>
+  </header>
+  <main class="main">
+    <div id="about" class="about-container main-content">
+      <h2 class="about-header">About Me</h2>
+      <div class="about-content">
+        <p class="about-description">
+          Software engineer with a degree in political science. A creative yet analytical problem solver who is driven by the idea of constantly facing new challenges within the ever changing field of technology.
+        </p>
       </div>
     </div>
-  </div>
-</div>
-    <script src="script.js"></script>
-  </body>
+    <div id="projects" class="project-container main-content">
+      <h2 class="project-header">Projects</h2>
+      <div class="project-content">
+        <div class="project1 project-icon">
+          <a href="https://jamiemiller8.github.io/simon-says/" class="project-button"
+          target="_blank">Deployed Site</a>
+          <a href="https://github.com/jamiemiller8/simon-says" class="project-button"
+          target="_blank">Github Repository</a>
+        </div>
+        <div class="project2 project-icon"></div>
+        <div class="project3 project-icon"></div>
+        <div class="project4 project-icon"></div>
+      </div>
+      </div>
+    <div id="skills" class="skills-container main-content">
+      <h2 class="skills-header">Skills</h2>
+      <div class="skill-list-container">
+        <span class="skill">JavaScript</span>
+        <span class="skill">Python</span>
+        <span class="skill">React</span>
+        <span class="skill">Node</span>
+        <span class="skill">Express</span>
+        <span class="skill">Mongoose</span>
+        <span class="skill">MongoDB</span>
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">Git</span>
+      </div>
+    </div>
+    <div id="contact" class="contact-container main-content">
+      <h2 class="contact-header">Contact</h2>
+      <form class="contact-form" action="https://formspree.io/miller0328@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="First Name">
+        <input type="text" name="name" placeholder="Last Name">
+        <input type="email" name="email" placeholder="Email">
+        <textarea cols="60" rows="5" name="message" placeholder="Enter message here"></textarea>
+        <br>
+        <input class="submit-form" type="submit" value="Submit">
+      </form>
+    </div>
+  </main>
+  <footer class="main-content">
+    <ul class="social-media">
+      <li>
+        <a href="https://www.linkedin.com/in/jamie-miller8/" class="contact-link">
+          <i class="fab fa-linkedin">
+            <!-- ::before -->
+          </i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/jamiemiller8" class="contact-link">
+          <i class="fab fa-github-square">
+            <!-- ::before -->
+          </i>
+        </a>
+      </li>
+    </ul>
+  </footer>
+</body>
 </html>
+
 
 
 
