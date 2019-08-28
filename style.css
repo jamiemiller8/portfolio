@@ -116,23 +116,17 @@ h1 {
 	margin: 20px;
 }
 
-.project-button {
+/* .project-button {
 	border: 1px solid white;
 	padding: 1rem;
 	background-color: #0198E1;
 	border-radius: 5px;
 	color: white;
-}
+} */
 
 a:visited,
 a:link {
 	text-decoration: none;
-}
-
-/* not sure where this applies */
-.project-image {
-	width: 100%;
-	border-radius: 5px;
 }
 
 /* maybe go back and fix later so buttons aren't on top of image*/
@@ -146,7 +140,37 @@ a:link {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	animation: fade-in 0.5s;
 }
+
+/* experimenting with trying to get the buttons to appear differently */
+.project {
+	transition: all 0.3s ease;
+	margin: 25px;
+	position: relative;
+	height: 270px;
+}
+
+.project-button,
+.project-button:visited {
+	text-decoration: none;
+	color: black;
+	padding: 15px;
+	background: white;
+	margin: 10px 0px;
+	border-radius: 5px;
+}
+
+.project-button:hover {
+	background: #0198E1;
+	color: white;
+}
+
+.project:hover {
+	transform: scale(1.1)
+}
+
+/*end of experimenting */
 
 .project1 {
 	background-image: url("images/Screen Shot 2019-07-18 at 10.46.05 PM.png");
