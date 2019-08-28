@@ -51,5 +51,239 @@ h1 {
 	flex-wrap: wrap;
 }
 
-/* the light blue color */
-/* background-color: #E5F2FF; */
+.navigation {
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 20px;
+}
+
+.nav-buttons-container {
+	display: flex;
+	justify-content: center;
+}
+
+.nav-links {
+	padding: 0.5rem 1rem;
+	margin: 0.5rem 1rem;
+	background-color: white;
+	border-radius: 5px;
+	cursor: pointer;
+	border: none;
+	min-width: 100px;
+	color: black;
+	text-decoration: none;
+}
+
+.nav-links:hover {
+	background-color: #0198E1;
+}
+
+.about-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.about-content {
+	width: 75%;
+}
+
+.about-content p {
+	font-size: 24px;
+}
+
+.about-description {
+	width: 75%;
+	margin: 20px auto;
+	text-align: center;
+}
+
+.project-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.project-content {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-content: space-around;
+	margin: 20px;
+}
+
+.project-button {
+	border: 1px solid white;
+	padding: 1rem;
+	background-color: #0198E1;
+	border-radius: 5px;
+	color: white;
+}
+
+a:visited,
+a:link {
+	text-decoration: none;
+}
+
+/* not sure where this applies */
+.project-image {
+	width: 100%;
+	border-radius: 5px;
+}
+
+/* maybe go back and fix later so buttons aren't on top of image*/
+.project-icon {
+	width: 500px;
+	height: 270px;
+	background-color: lightgrey;
+	margin: 20px;
+	text-align: center;
+	border-radius: 5px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.project1 {
+	background-image: url("images/Screen Shot 2019-07-18 at 10.46.05 PM.png");
+	background-size: 100% 100%;
+	background-color: black;
+}
+
+.project3 {
+	background-image: url("images/Screen Shot 2019-08-27 at 9.42.07 PM.png");
+	background-size: 100% 100%;
+}
+
+.project-header, .skills-header, .contact-header, .about-header {
+	font-weight: normal;
+	color: rgb(29, 30, 35);
+	font-size: 32px;
+	justify-self: center;
+	align-self: center;
+}
+
+h2:nth-child(even) {
+	color: white;
+}
+
+.skills-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.skill-list-container {
+	padding: 4rem 0;
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.skill {
+	border: 1px solid transparent;
+	color: white;
+	background-color: #0198E1;
+	padding: 1rem;
+	border-radius: 5px;
+	width: 120px;
+	margin: 1rem;
+	text-align: center;
+}
+
+.contact-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.contact-form {
+	width: 50%;
+	margin-bottom: 30px;
+	max-width: 400px;
+}
+
+.main-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+input, textarea {
+	width: 100%;
+	margin: 10px;
+	box-sizing: border-box;
+	overflow: visible;
+	resize: none;
+}
+
+.name {
+	color: #0198E1;
+	font-size: 56px;
+}
+
+.social-media {
+	list-style: none;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 0;
+}
+
+.fa {
+	font-size: 4rem;
+	color: rgb(29, 30, 35);
+	margin: 1rem;
+}
+
+.fa:hover {
+	opacity: 0.6;
+}
+
+.submit-form {
+	padding: 0.5rem 1rem;
+	margin: 1rem 0.5rem;
+	background-color: white;
+	border-radius: 5px;
+	cursor: pointer;
+	border: none;
+	min-width: 100px;
+}
+
+.submit-form:hover {
+	background-color: #0198E1;
+}
+
+.contact-message {
+	color: #0198E1;
+}
+
+
+@media only screen and (max-width: 560px) {
+	h1 {
+		font-size: 30px;
+		margin-top: 100px;
+	}
+	.name {
+		font-size: 32px;
+	}
+	.nav-buttons-container {
+		flex-direction: column;
+	}
+	.nav-links {
+		min-width: 60px;
+	}
+	.project-icon {
+		width: 90%;
+		height: 170px;
+	}
+}
