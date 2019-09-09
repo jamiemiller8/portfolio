@@ -169,10 +169,6 @@ a:link {
 	display: block;
 }
 
-
-
-
-
 .project-title, .skills-header, .contact-header, .about-header {
 	font-weight: normal;
 	color: rgb(29, 30, 35);
@@ -296,7 +292,7 @@ input, textarea {
 	.nav-links {
 		min-width: 60px;
 	}
-	.project-icon {
+	.project-grow {
 		width: 90%;
 		height: 170px;
 	}
